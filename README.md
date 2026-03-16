@@ -1,4 +1,4 @@
-# ZenGarden
+# Zen-Garden
 
 A web-based project designed to provide a calm and interactive user experience.
 
