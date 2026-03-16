@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-image: url("./assets/images/Sand\ 2.png");
+    background-repeat: repeat;
+    background-size: 60%;
+    width: 100%;
+    height: 100%;
+    /*background-size: cover;*/
+    background-position: center center;
+    font-family: "Pixelify Sans", sans-serif;
+    color: #4A4A4A;
+    overflow: hidden;
+}
+
+/* Ensure .objects-container fills the viewport */
+.objects-container {
+/*    position: relative;
+    width: 100vw;
+    height: 100vh;*/
+    width:100%;
+    height:500px;
+    overflow:hidden;
+}
+
+/* Center .container without affecting the whole page layout */
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 5%;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 2vw;
+    filter: drop-shadow(20px 20px 20px rgba(0,0,0,0.3));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+/* Objects positioned absolutely within the container */
+.object {
+    position: absolute;
+
+}
+
+/* Position adjustments for specific objects */
+/*#rake {
+    transform: scale(0.9);
+    height: auto;
+    top: 60%;
+    left: 70%;
+}*/
+
+#rake {
+    transform: scale(0.75) rotate(-30deg);
+    height: auto;
+    top: 55%;
+    left: 55%;
+    z-index: 4;
+    filter: drop-shadow(20px 20px 11px rgba(0,0,0,0.5));
+}
+
+#clip {
+    transform: scale(0.7);
+    top: 60%;
+    /* 10% from the top of the container */
+    left: 10%;
+    /* 10% from the left of the container */
+    z-index: 1;
+    filter: drop-shadow(2px 2px 7px rgba(0,0,0,0.5));
+}
+
+#button {
+    transform: scale(0.7);
+    height: auto;
+    top: 10%;
+    /* 10% from the top of the container */
+    left: 40%;
+    /* 10% from the left of the container */
+    z-index: 1;
+    filter: drop-shadow(2px 2px 7px rgba(0,0,0,0.5));
+}
+
+#paperclip {
+    transform: scale(0.7);
+    height: auto;
+    top: 10%;
+    /* 10% from the top of the container */
+    left: 10%;
+    /* 10% from the left of the container */
+    z-index: 1;
+    filter: drop-shadow(2px 2px 7px rgba(0,0,0,0.5));
+}
+
+#penny {
+    transform: scale(0.7);
+    height: auto;
+    top: 10%;
+    /* 10% from the top of the container */
+    left: 80%;
+    /* 10% from the left of the container */
+    z-index: 1;
+    filter: drop-shadow(2px 2px 7px rgba(0,0,0,0.5));
+}
+
+/* Styles for title and button */
+.title {
+    font-size: 3.5vw;
+    color: #6D6875;
+    margin-bottom: 1%;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 1.4vw;
+    color: #B5838D;
+    margin-bottom: 2%;
+}
+
+.enter-button {
+    display: inline-block;
+    padding: 1.5% 3%;
+    font-size: 1.1vw;
+    color: #fff;
+    background-color: #6D6875;
+    border: 0.2vw solid #B5838D;
+    border-radius: 3vw;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 2%;
+    box-shadow: 0px 0.8vw 1.5vw rgba(0, 0, 0, 0.2);
+}
+
+.enter-button:hover {
+    background-color: #B5838D;
+    transform: scale(1.05);
+}
+
+body {
+    border: 10px solid #6D6875;
+    /* Adjust thickness and color as needed */
+    padding: 20px;
+    /* Adds space between border and content */
+    margin: 0;
+    /* Removes any default margin */
+    box-sizing: border-box;
+    /* Ensures padding and border are included in the element’s width/height */
+}

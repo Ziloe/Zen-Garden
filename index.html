@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zen Garden</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+        <audio id="gardenLoop" loop="true" src="./assets/music/GardenLoop.mp3" type="audio/mpeg"></audio>
+        <img id="cursor" data-is-selected="false" src="./assets/images/Animated Rake/Rake 1.png">
+        <nav class="bottom-navbar">
+                <button class="nav-button" onclick="startRake()"><img id="rakeIcon" class="icon"
+                                src="./assets/images/Rake Warm 3.png" width="20%"></button>
+                <button class="nav-button" onclick="dragObject('Stone')"><img class="icon"
+                                src="./assets/images/Rock Warm 2.png" width="20%"></button>
+                <button class="nav-button" onclick="dragObject('Paperclip')"><img class="icon"
+                                src="./assets/images/Paperclip Warm.png" width="20%"></button>
+                <button class="nav-button" onclick="dragObject('Penny')"><img class="icon"
+                                src="./assets/images/Penny Warm.png" width="20%"></button>
+                <button class="nav-button" onclick="dragObject('BinderClip')"><img class="icon"
+                                src="./assets/images/Clip Warm.png" width="20%"></button>
+                <button class="nav-button" onclick="dragObject('Button')"><img class="icon"
+                                src="./assets/images/Button Warm.png" width="20%"></button>
+                <button class="nav-button" onclick="dragObject('StoneFour')"><img class="icon"
+                                src="./assets/images/Rock Warm 4.png" width="20%"></button>
+        </nav>
+        <div id="spawnedImages">
+        </div>
+        <canvas id="drawCanvas"></canvas>
+        <script src="./script.js"></script>
+</body>
+
+</html>

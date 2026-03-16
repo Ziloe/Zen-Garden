@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1rem;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+}
+
+body, html {
+    background-image: url("./assets/images/Sand\ 2.png");
+    background-repeat: repeat;
+    background-size: 60%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute; /* Layering requires positioned elements */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Sits above the background */
+}
+
+#cursor {
+    position: absolute;
+    z-index: 3;
+    width: 15%;
+    display: none;
+    filter: drop-shadow(30px 30px 4px rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+    user-select: none;
+}
+
+.allSpawnedImages {
+    position: absolute;
+    z-index: 2;
+    filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+    pointer-events: none;
+    user-select: none;
+}
+
+.bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 10px 0 0;
+    z-index: 3;
+}
+
+.nav-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
