@@ -16,6 +16,12 @@ ZenGarden is a front-end web application built with HTML, CSS, and JavaScript. I
 - `script.js` – Handles interactive logic
 - `assets/` – Directory for images and icons
 
+## Contributions
+I worked on this project as part of a team. My contributions included:
+- Testing functionality and reporting bugs
+- Helping ensure smooth user interactions
+- Supporting team development and project organization
+
 ## How to Run
 1. Clone this repository to your local machine
 2. Open `index.html` in any modern web browser (Chrome, Firefox, Edge)
